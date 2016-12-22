@@ -19,7 +19,7 @@ pass-insert-qr pass-name
 Inserts a QR into the password store called pass-name. This will obtain the QR from the (macOS) pasteboard using `pngpaste` and decode the QR using `zbarimg`.
 
 pass-show-qr pass-name
-Decrypt and quicklooks the secret named pass-name as QR code. This generates the QR by passing the password to `qrencode`. It quicklooks the QR using `qlmanage`.
+Decrypt and quicklooks the secret named pass-name as QR code. This generates the QR by passing the password to `qrencode`.
 ```
 
 ## Examples
@@ -27,13 +27,13 @@ Decrypt and quicklooks the secret named pass-name as QR code. This generates the
 Add a 2FA secret to store (assumes there is a QR encoded secret on the pasteboard)
 
 ```
-pass-insert-qr amazon-2fa-secret
+pass-insert-qr 2fa-secret
 ```
 
 Quicklook existing password as QR
 
 ```
-pass-show-qr amazon-2fa-secret
+pass-show-qr 2fa-secret
 ```
 
 
