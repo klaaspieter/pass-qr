@@ -7,6 +7,4 @@ if [[ -z "$1" ]]; then
 fi
 
 secret=$(pass show "$1")
-file="$(mktemp -d)/${1//\//-}.png"
-qrencode -o "$file" "$secret"
-qlmanage -p "$file" &> /dev/null
+qrencode -t ansi256 "$secret"
