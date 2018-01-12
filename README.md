@@ -7,9 +7,17 @@ Convenience commands for reading and inserting QRs in [pass] on macOS. Especiall
 
 ## Install
 
+### Homebrew
 ```
 brew tap klaaspieter/homebrew-kpa
 brew install pass-qr
+```
+
+### Manual
+
+```
+git clone https://github.com/klaaspieter/pass-qr.git
+make install
 ```
 
 ## Use
@@ -35,5 +43,4 @@ Quicklook existing password as QR
 ```
 pass-show-qr 2fa-secret
 ```
-
 
