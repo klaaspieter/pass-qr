@@ -1,3 +1,5 @@
+:warning: Made obsolete by pass' own QRCode capabilities.
+
 # Pass QR
 
 Convenience commands for reading and inserting QRs in [pass] on macOS. Especially useful with QR encoded [2FA] secrets.
